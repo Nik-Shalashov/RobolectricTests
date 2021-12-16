@@ -1,6 +1,5 @@
 package com.geekbrains.tests.presenter.details
 
-import com.geekbrains.tests.view.ViewContract
 import com.geekbrains.tests.view.details.ViewDetailsContract
 
 internal class DetailsPresenter internal constructor(
@@ -21,13 +20,4 @@ internal class DetailsPresenter internal constructor(
         count--
         viewContract.setCount(count)
     }
-
-    override fun onAttach(viewContract: ViewContract) {
-        this.viewContract = viewContract as ViewDetailsContract
-    }
-
-    override fun onDetach(viewContract: ViewContract) {
-        this.viewContract = null
-    }
-
 }

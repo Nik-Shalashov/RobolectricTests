@@ -47,10 +47,4 @@ class DetailsActivity : AppCompatActivity(), ViewDetailsContract {
             }
         }
     }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        presenter.onDetach(this)
-    }
-
 }
