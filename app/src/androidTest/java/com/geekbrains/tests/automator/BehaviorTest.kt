@@ -113,7 +113,7 @@ class BehaviorTest {
     fun test_quantity() {
 
         val editText = uiDevice.findObject(By.res(packageName, "searchEditText"))
-        editText.text = "nikshalashov"
+        editText.text = "andrespin"
 
         val toDetails: UiObject2 = uiDevice.findObject(
             By.res(
