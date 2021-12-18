@@ -20,5 +20,4 @@ internal class DetailsPresenter internal constructor(
         count--
         viewContract.setCount(count)
     }
-
 }
